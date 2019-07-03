@@ -26,7 +26,7 @@ function getData() {
     $.ajax({
         type: 'GET',
         dataType: 'json',
-        url: 'https://github.com/musicPlayer/out/mock/data.json',
+        url: 'https://famewlh.github.io/musicPlayer/out/mock/data.json',
         success: function (data) {
             dataList = data;
             player.render(data[0]); //渲染数据可视化
