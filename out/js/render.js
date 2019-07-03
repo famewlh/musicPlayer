@@ -4,7 +4,8 @@
         var img = new Image();
         img.src = data.image;
         img.onload = () => {
-            $('.image-box .img').html(img); //这里要用html，才能实现替换，不要用append
+            $('.img img').attr('src', data.image);
+            // $('.image-box .img').html(img); //这里要用html，才能实现替换，不要用append
             player.blurImg(img, $('body')); //高斯模糊渲染背景图片
         }
     }
